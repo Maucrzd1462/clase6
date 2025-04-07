@@ -127,6 +127,9 @@ def main():
 
                 for i in range(0,nm):
                     nombre_medicamentos = input("Ingrese el nombre del medicamento: ")
+                    if nombre_medicamento in nombres_usados:
+                        print("¡¡Ese medicamento ya fue ingresado!!")
+                        continue
                     dosis =int(input("Ingrese la dosis: "))
                     medicamento = Medicamento()
                     medicamento.asignarNombre(nombre_medicamentos)
