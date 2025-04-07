@@ -47,7 +47,7 @@ class Mascota:
         self.__peso=p
     def asignarFecha(self,f):
         try:
-            fecha = datetime.strptime(f, "%d/%m/%y")
+            f = datetime.strptime(f, "%d/%m/%y")
             self.__fecha_ingreso=f
         except ValueError:
             print("Fecha mal digitada, ejemplo: 06/07/18")
